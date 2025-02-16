@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Register for the Event</h1>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <br>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" required>
+            
+            <label for="enrollment-number">Enrollment Number:</label>
+            <input type="text" id="enrollment-number" required>
+            
+            <label for="email">Student Email ID:</label>
+            <input type="email" id="email" required>
+            
+            <label for="status">Are you a Hosteler or Day Scholar?</label>
+            <select id="status">
+                <option>Hosteler</option>
+                <option>Day Scholar</option>
+            </select>
+            
+            <button type="submit">Proceed to Payment (500 INR)</button>
+        </form>
+    </main>
+</body>
+</html>

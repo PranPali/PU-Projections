@@ -1,0 +1,55 @@
+/* General Styles */
+body { background-color: #201E43; color: #eeeeee; font-family: 'Josefin Sans', sans-serif; }
+header { background-color: #134B70; padding: 20px; text-align: center; }
+nav ul { list-style: none; padding: 0; }
+nav ul li { display: inline; margin: 0 15px; transition: transform 0.3s, color 0.3s; }
+nav ul li:hover { color: #ffffff; transform: scale(1.1); }
+a { color: #508C9B; text-decoration: none; }
+
+/* Gallery Page */
+.gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.photo { width: auto; height: auto; background: rgba(255, 255, 255, 0.3); transition: transform opacity 0.5s; }
+.photo:hover { 
+    opacity: 1; 
+    transform: scale(1.1);
+}
+.photo img {
+    width: 100%;  
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+}
+.video {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.video h2 {
+    margin-bottom: 10px;
+}
+.video video {
+    width: 100%;
+    height: auto;
+}
+
+/* Guests Page */
+.guest { margin: auto; padding: 20px; max-width: 80vw; background-color: #acbcff; transition: transform 0.3s; }
+.guest:hover { transform: scale(1.1); }
+.guest img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+/* Registration Page */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
